@@ -3,11 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
-	<array/>
+	<array>
+		<string>html</string>
+		<string>txt</string>
+	</array>
 	<key>foldingStartMarker</key>
-	<string>(&lt;(?i:(head|table|tr|div|style|script|ul|ol|form|dl))\b.*?&gt;|{% (block|comment|filter|for|if|ifchanged|ifequal|ifnotequal))</string>
+	<string>({% (block|comment|for|if|ifequal|ifnotequal|spaceless|with|blocktrans) %})</string>
 	<key>foldingStopMarker</key>
-	<string>(&lt;/(?i:(head|table|tr|div|style|script|ul|ol|form|dl))&gt;|{% (endblock|endblocktrans|endcomment|endfilter|endfor|endif|endifchanged|endifequal|endifnotequal) %})</string>
+	<string>({% (endblock|endcomment|endfor|endif|endifequal|endifnotequal|endspaceless|endwith|endblocktrans) %})</string>
 	<key>keyEquivalent</key>
 	<string>^~D</string>
 	<key>name</key>
